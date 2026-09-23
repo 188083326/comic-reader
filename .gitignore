@@ -1,0 +1,45 @@
+# 这个仓库只放编译产物，不放源码。
+# 下面这些规则是防呆用的：万一有人（或某个脚本）手滑把源码目录拷进来，
+# git 也会直接忽略掉，不会误传。
+
+# 源码
+lib/
+test/
+android/
+windows/
+ios/
+linux/
+macos/
+web/
+tool/
+src/
+*.dart
+*.kt
+*.java
+*.swift
+*.cpp
+*.h
+pubspec.yaml
+pubspec.lock
+analysis_options.yaml
+*.iml
+
+# 构建产物与依赖（安装包走 Release 附件，不提交进仓库）
+build/
+.dart_tool/
+.packages
+.flutter-plugins*
+release/
+
+# 含密码 / 密钥的东西
+key.properties
+*.jks
+*.p12
+*.keystore
+dav-config.ps1
+
+# 编辑器
+.idea/
+.vscode/
+.DS_Store
+*~
